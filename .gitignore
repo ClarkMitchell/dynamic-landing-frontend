@@ -32,3 +32,8 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+.vscode
+
+insure-landing-page-master
+
