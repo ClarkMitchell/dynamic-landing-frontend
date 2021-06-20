@@ -1,20 +1,18 @@
 import { ApolloProvider } from "@apollo/react-hooks";
-import {
-  ApolloClient,
-  InMemoryCache,
-} from "@apollo/client";
+import { ApolloClient, InMemoryCache } from "@apollo/client";
+import "../styles/reset.css";
 import "../styles/globals.css";
 
 export const client = new ApolloClient({
   uri: process.env.REACT_APP_API_URL,
-  cache: new InMemoryCache()
+  cache: new InMemoryCache(),
 });
 
 function MyApp({ Component, pageProps }) {
   return (
-      <ApolloProvider client={client}>
-        <Component {...pageProps} />
-      </ApolloProvider>
+    <ApolloProvider client={client}>
+      <Component {...pageProps} />
+    </ApolloProvider>
   );
 }
 
