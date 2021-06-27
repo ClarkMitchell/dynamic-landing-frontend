@@ -214,6 +214,10 @@ li > a {
   background-color: var(--dusk);
 }
 
+.nav-link {
+  border: none;
+}
+
 .mobile-nav {
   display: none;
 }
